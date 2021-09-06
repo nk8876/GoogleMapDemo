@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         }
     }
 
-
+// Show Marker
     func showMarker(position:CLLocationCoordinate2D) {
         let marker = GMSMarker()
         marker.position = position
@@ -55,6 +55,7 @@ extension ViewController : GMSMapViewDelegate{
         print("Long press Marker")
     }
     
+    //Get Info on Marker Window
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
         let view = UIView(frame: CGRect.init(x: 0, y: 0, width: 100, height: 50))
         view.backgroundColor = UIColor.white
